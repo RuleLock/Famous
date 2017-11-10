@@ -70,6 +70,9 @@ class FollowPeoples : Activity() {
     }
 
     private fun initPeoples() {
+        peoples.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
+//            startActivity(Intent(this, star.c))
+        }
         peoples.adapter = PeoplesAdapter(this, peoplesList)
         peoples.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
