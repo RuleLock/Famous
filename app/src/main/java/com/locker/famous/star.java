@@ -41,6 +41,7 @@ public class star extends Activity {
         list.add(R.drawable.chen1);
         list.add(R.drawable.chen2);
         list.add(R.drawable.chen3);
+
         list.add(R.drawable.chen4);
         list.add(R.drawable.chen5);
         for (int i = 0;i<5;i++){
