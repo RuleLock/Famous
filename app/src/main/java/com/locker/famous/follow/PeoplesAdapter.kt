@@ -21,12 +21,12 @@ class PeoplesAdapter(private var ctx: Context, private var list: List<Int>): Bas
         if (convert == null) {
             convert = LayoutInflater.from(ctx).inflate(R.layout.item_peoples, parent, false)
             holder = ViewHolder(convert)
-            convert.tag = holder
+            convert!!.tag = holder
         } else {
             holder = convert.tag as ViewHolder
         }
         holder.image.setImageResource(list[position])
-        return View(ctx)
+        return convert
     }
 
     override fun getItem(position: Int): Int {

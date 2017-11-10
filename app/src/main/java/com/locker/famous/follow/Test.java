@@ -1,7 +1,6 @@
 package com.locker.famous.follow;
 
-import java.util.ArrayList;
-import java.util.List;
+import android.view.View;
 
 /**
  * @author fxc
@@ -11,7 +10,7 @@ import java.util.List;
 
 public class Test {
 	public void test() {
-		List<Integer> list = new ArrayList<>();
-		list.add(1);
+		View v;
+//		v.setFocusable(true);
 	}
 }

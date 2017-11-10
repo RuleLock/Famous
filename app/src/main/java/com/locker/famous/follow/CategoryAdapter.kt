@@ -13,20 +13,19 @@ import kotlinx.android.synthetic.main.item_category.view.*
  * @author fxc
  * @date 2017/11/10.
  */
-class CategoryAdapter(private var ctx: Context, private var list: List<Int>):BaseAdapter() {
-
+class CategoryAdapter(private var ctx: Context, private var list: List<Int>) : BaseAdapter() {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         var convert = convertView
         val holder: ViewHolder
         if (convert == null) {
             convert = LayoutInflater.from(ctx).inflate(R.layout.item_category, parent, false)
             holder = ViewHolder(convert)
-            convert.tag = holder
+            convert!!.tag = holder
         } else {
             holder = convert.tag as ViewHolder
         }
         holder.image.setImageResource(list[position])
-        return View(ctx)
+        return convert
     }
 
     override fun getItem(position: Int): Int {
