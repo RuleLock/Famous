@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="20dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/starimage"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/starimage"
+        android:layout_alignLeft="@+id/starimage"
+        android:id="@+id/startextview"
+        android:focusable="false"/>
+</RelativeLayout>

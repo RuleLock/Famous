@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.locker.famous;
+package com.locker.famous
 
 import android.graphics.drawable.Drawable
 import android.support.v17.leanback.widget.ImageCardView

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lb_tv_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/total">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="81dp"
+                android:text="MMINGREN"
+                android:textColor="@color/lb_default_brand_color"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_toStartOf="@+id/serch"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/imageView" />
+
+            <EditText
+                android:id="@+id/serch"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="80dp" />
+        </RelativeLayout>
+
+
+        <HorizontalScrollView
+            android:id="@+id/srcoll"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/total"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear"
+                android:orientation="horizontal"
+                android:nextFocusDown="@id/listviews">
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Name"
+            android:text="Burning"
+            android:layout_below="@+id/srcoll"
+            android:textColor="@color/lb_default_brand_color"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/srcoll"
+            />
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/startext"
+            android:text="sadddddddddddddddddwadsacdasfasfawfacwrqreqwdqwrqwrqwwrwqrqwrwrwqrsadasd"
+            android:layout_below="@+id/Name"
+            android:textColor="@color/lb_default_brand_color"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/srcoll"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/startext"
+            android:layout_marginTop="27dp"
+            android:layout_alignLeft="@+id/startext"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/choice"
+                android:layout_marginLeft="50dp"
+                android:text="选择"
+                android:textColor="@color/lb_default_brand_color"
+
+                android:textSize="25dp" />
+
+            <ListView
+                android:id="@+id/listviews"
+                android:layout_width="100dp"
+                android:layout_height="500dp"
+                android:layout_below="@+id/choice"
+                android:layout_toRightOf="@+id/choice"
+                android:background="@drawable/lb_background"
+                android:dividerHeight="10dp"
+                />
+
+            <GridView
+                android:layout_width="wrap_content"
+                android:id="@+id/grid"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/listviews"
+                android:layout_alignTop="@+id/listviews"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@color/lb_default_brand_color"
+                android:numColumns="4"
+                android:columnWidth="50dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="20dp"
+                android:horizontalSpacing="20dp"
+                android:nextFocusRight="@id/grid"
+                android:nextFocusUp="@id/listviews"
+                >
+
+            </GridView>
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -201,7 +201,7 @@ class VideoDetailsFragment : DetailsFragment() {
     }
 
     companion object {
-        private val TAG = "VideoDetailsFragment";
+        private val TAG = "VideoDetailsFragment"
 
         private val ACTION_WATCH_TRAILER = 1L
         private val ACTION_RENT = 2L
