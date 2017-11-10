@@ -17,6 +17,7 @@ import android.widget.SimpleAdapter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.jar.Attributes;
 
 
@@ -28,6 +29,7 @@ public class star extends Activity {
 
     public StatItem statItem;
     public AttributeSet attributes;
+    public ArrayList<Integer> list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,9 +37,15 @@ public class star extends Activity {
         LinearLayout linearLayout = (LinearLayout)findViewById(R.id.linear);
         HorizontalScrollView horizontalScrollView = (HorizontalScrollView)findViewById(R.id.srcoll);
         linearLayout.hasFocus();
-        for (int i = 0;i<10;i++){
+        list = new ArrayList<>();
+        list.add(R.drawable.chen1);
+        list.add(R.drawable.chen2);
+        list.add(R.drawable.chen3);
+        list.add(R.drawable.chen4);
+        list.add(R.drawable.chen5);
+        for (int i = 0;i<5;i++){
             statItem = new StatItem(this);
-            statItem.setimage().setImageResource(R.drawable.devil);
+            statItem.setimage().setImageResource(list.get(i));
             statItem.setTextView().setText("No."+i);
             linearLayout.addView(statItem,i);
         }
