@@ -12,6 +12,6 @@ import com.youth.banner.loader.ImageLoader
  */
 class GlideImageLoader:ImageLoader() {
     override fun displayImage(context: Context?, path: Any?, imageView: ImageView?) {
-        imageView?.setImageResource(R.mipmap.ic_launcher)
+        imageView?.setImageResource(R.drawable.categorys_1)
     }
 }
